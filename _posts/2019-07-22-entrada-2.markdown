@@ -1,0 +1,84 @@
+---
+layout: post
+title: "Entrada 2: Bucles y condicionales"
+date: "2019-07-22 19:58:32 -0500"
+---
+Como segundo tema, veremos bucles y condicionales. Este tema va muy de la mano con los boolean, ya que, dependiendo de si una sentencia o condición sea verdadera o falsa, el código a seguir sera diferente.
+
+
+#### Los Bucles.
+
+Los bucles son la repetición de un código,
+
+Hay dos tipos de ellos:
+
+* while loop
+* for loop
+
+El while loop funciona dependiendo de si una condición se cumple, es decir, va a continuar repitiendo lo que tenga dentro hasta que la condición no sea cierta. El mal empleamiento de esta función puede llegar a causar loops infinitos que causaría que tu equipo crashee
+
+Aquí un ejemplo de un while loop:
+
+```python
+b = "0"
+a = 0
+while a < 10:
+	a += 1
+	b = ", " + str(a)
+print b
+```
+```python
+> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+```
+
+
+El for loop, por el otro lado, repite lo que tenga dentro por un rango determinado, por ejemplo un for loop se puede usar para cambiar cada elemento de una lista y luego parar. Todo lo que haces en un for loop se puede hacer en el while loop y viceversa, pero a diferencia de el, el for loop no puede llegar a un loop infinito.
+
+Un ejemplo de un for loop:
+
+```python
+b = "0"
+for i in range(1, 11):
+	b = ", " + i
+print b
+```
+```python
+> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+```
+
+#### Luego los condicionales,
+
+Los condicionales actúan de forma que si una sentencia o condición es verdadera o falsa va a seguir un procedimiento diferente. Un condicional tiene tres diferentes términos:
+
+* if, es la primera condición, si esta no se cumple pasa al primer elif
+*  elif, pueden haber un numero indeterminado de elifs y si uno no se cumple va a pasar al a revisar si el siguiente se cumple yendo de arriba a abajo
+* else, esta es la ultima opción, si ninguna condición de if o elif se cumple, se va a seguir lo que contenga else
+
+He aquí un ejemplo de esto:
+```python
+a = 5
+
+if a > 10:
+	print "el numero" + str(a) + " es menor que 10"
+elif a < 10:
+	print "el numero" + str(a) + " es mayor que 10"
+else:
+	print "el numero" + str(a) + " es 10"
+```
+```python
+> el numero 5 es menor que 10
+```
+
+
+> Definición de range:
+>
+Range es un termino que se usa bastante con el for loop para crear un rango en el cual este funcione, este tiene tres diferentes formas de funcionar,
+>
+Cuando solo hay un numero, range toma todos los números desde el 0 hasta uno antes del mismo numero
+*  range(10) incluiría del número 0 hasta el 9
+>
+Cuando hay 2 números, el primero es indica en que numero empieza, contándose a sí mismo, y el segundo en cual termina, sin contarse.
+*  range(1, 10) incluiría del número 1 al 9
+>
+cuando hay 3 números, el primero y segundo es lo mismo que cunado hay 2 números, pero, el tercero seria el salto entre los números
+*  range(2, 11, 2) incluiría el numero 2, 4, 6, 8, 10 o desde el número 2, dando saltos de 2 en 2, hasta llegar al 10

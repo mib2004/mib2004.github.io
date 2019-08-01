@@ -16,7 +16,7 @@
 title: Bitácora de Programación
 email: marcelo.icochea.burneo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  TODO
+  Bitacora de Programación en la cual enseño a los lectores a programar usando terminos mas simples y entendibles.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mib2004

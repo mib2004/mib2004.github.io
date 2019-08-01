@@ -1,7 +1,90 @@
 ---
 layout: post
-title: "Entrada 1"
+title: "Entrada 1: Variables y sus tipos"
 date: "2019-07-21 19:58:32 -0500"
 ---
+Daré inicio a este blog revisando uno de los conceptos más sencillos. Dicho concepto es el de las variables básicas. Podemos encontrar hasta cuatro tipos de variables básicas:
 
-TODO
+
+
+* *int*: un numero entero
+* *float*: un numero decimal
+* *string*: cualquier palabra, letra u oración, los strings siempre van entre comillas,
+* *booleans*: que solo tiene dos valores: True o False.
+
+
+
+A continuación un ejemplo de cada variable:
+
+```python
+variableInt = 5
+varibleFloat = 5.00
+variablesString = "hola"
+VariableBoolean = True
+```
+
+
+Todas estas variables se pueden usar de diferentes formas.
+* Los ints normalmente sirven para asignarle un valor numérico entero a una variable.
+* Los float cuando quieres hacer cálculos más precisos de un numero.
+* Los strings sirven para crear texto y manipularlo.
+* Los booleans, empleando los condicionales se usan para alterar el flujo de un programa, ademas de que sirven para guardar si un valor es verdadero o no.
+
+
+
+He aquí unos ejemplos de ello:
+
+Ejemplo int:
+```python
+variableInt = 5
+variableInt += 2
+print variableInt
+```
+```python
+> 7
+```
+
+
+Ejemplo float:
+```python
+variableFloat = 5.00
+variableFloat /= 2
+print variableFloat
+```
+```python
+> 2.50
+```
+
+
+Ejemplo string:
+```python
+string1 = "buenos"
+string2 = "días"
+variableString = string1 + string2
+print variableString
+```
+```python
+> "buenos días"
+```
+
+
+Ejemplo boolean:
+```python
+variableBoolean = True
+if variableBoolean = False:
+	x = "boolean es falso"
+else:
+	x = "boolean es verdadero"
+print x
+```
+```python
+> "boolean es verdadero"
+```
+
+Dato curioso:
+
+> Las variables no pueden tomar como nombre: int, float, string, o boolean, porque estas palabras ya tienen una función reservada dentro de python, y usarlas sobrescribiría su función.
+
+> Se puede usar a += b para abreviar a = a + b y hací con todas las operaciones
+
+> "print" se usa para devolver el valor de algo
