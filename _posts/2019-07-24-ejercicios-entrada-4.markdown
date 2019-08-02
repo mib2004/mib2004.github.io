@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ejercicios entrada 3"
+title: "Ejercicios entrada 4"
 date: "2019-07-24 19:58:47 -0500"
 ---
 
@@ -47,7 +47,7 @@ Pregunta: ¿Que se imprime tras ejecutar este codigo?
 ```python
 a = [3, "hola", 4]
 b = (0, 6, "bueno")
-print a + b
+print a[1] + b[2]
 ```
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?

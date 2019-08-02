@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Entrada 4: Variables avanzadas/objetos"
-date: "2019-07-23 19:58:47 -0500"
+date: "2019-07-24 19:58:47 -0500"
 ---
 
 A partir de ahora es cuando se empieza a complicar un poco, pero una vez que le agarras el truco se vuelve fácil.
@@ -16,12 +16,18 @@ Hay 3 tipos de variables avanzadas
 
 Antes de ir a la definición de cada variable, hay un concepto muy importante relacionado con estas variables avanzadas, y este es la "mutabilidad". Los diccionary y lists son mutables, mientras que el tuple no. Esto significa que todo lo que esta dentro de un diccionary o list puede ser cambiado, mientras que un tuple no.
 
-
-Las tres variables avanzadas consisten de un grupo de variables básicas manejadas de diferente forma.
-
+Otra cosa importante de mencionar son los metodos. Los metodos son como codigos se aplican a las variables de cualquier tipo, existen un monton de metodos y todos tienen la misma forma en escribirlas, `variable.metodo`. unos ejemplos de metodos son, `.append()`: agrega el elemento en los parentesis a una variable mutable, `clear()`: quita todos los elementos de la lista
 
 
-* Un tuple es un grupo de variables básicas, un tuple es inmutable así que las variables dentro nunca van a cambiar después de ser definidas. La manera de definirlas es nombreDeLaVarible = (grupo de variables básicas)
+Las tres variables avanzadas consisten de un grupo de variables manejadas de diferente forma.
+
+
+
+* Un tuple es un grupo de variables, un tuple es inmutable así que las variables dentro nunca van a cambiar después de ser definidas. La manera de definirlas es `nombreDeLaVarible = (grupo de variables básicas)`
+
+> Cabe resaltar que dentro de un tuple o cualquiar variable avanzada, puede haber otra variable avanzadas
+>
+> ejemplo: `a = (1, 3, "hola", {1: ("enero", "mes", 1)  2: febrero, 3: marzo}, 1.0, [1, 2.0, "qwerty"])`
 
 ```python
 variableTuple = (1, "hola", 1.0)
@@ -32,10 +38,10 @@ print variableTuple
 > (1, "hola", 1.0)
 ```
 
-> cuando solo hay una variable se pone así: variableTupple = (1,) esto solo se aplica en el tuple
+> cuando solo hay una variable se pone así: `variableTuple = (1,)` esto solo se aplica en el tuple
 
-* Una list es lo mismo que un tupple solo que este si es mutable, es decir, las variables dentro pueden ser modificadas en cualquier momento. A diferencia de un tupple una list se define con []. La manera en definir una list es nombreDeLaVarible = [grupo de variables básicas]
-
+* Una list es similar a un tuple con la diferencia que este si es mutable, es decir, las variables dentro pueden ser modificadas en cualquier momento. A diferencia de un tuple una list se define con []. La manera en definir una list es `nombreDeLaVarible = [grupo de variables básicas]`
+La forma de cambiar un elemento de una list es `nombreDeLaList[numeroDeElementoACambiar] = ElementoNuevo`
 ```python
 variableList = [1, "hola", 1.0]
 print variableList
@@ -45,7 +51,7 @@ print variableList
 > [1,"hola", 1.0]
 ```
 
-* Finalmente el diccionary, este si tiene un sistema diferente que el de las otras dos variables, pues este se compone de un grupo de variables básicas, y cada una tiene su "key" que es una forma que vendría a ser su palabra clave, un diccionary es mutable, lo cual significa que las variables dentro pueden ser modificadas en cualquier momento. La manera en definir una list es nombreDeLaVarible = {palabraClave: variableBasica, palabraClave: variableBasica, palabraClave: variableBasica, etc}
+* Finalmente el diccionary, este si tiene un sistema diferente que el de las otras dos variables, pues este se compone de un grupo de variables , y cada una tiene su "key" que es una forma que vendría a ser su palabra clave, un diccionary es mutable, lo cual significa que las variables dentro pueden ser modificadas en cualquier momento. La manera en definir una list es `nombreDeLaVarible = {palabraClave: variableBasica, palabraClave: variableBasica, palabraClave: variableBasica, etc}`
 
 
 ```python
@@ -55,3 +61,10 @@ variableDiccionary = {"nombre": "Marcelo", "apellido": "Icochea", "edad": 14}
 ```python
 > {"nombre": "Marcelo", "apellido": "Icochea", "edad": 14}
 ```
+> Para sacar un elemento de una variable avanzada, se pone el numero de elemento que quieres sacar desde izquierda a derecha empezando desde 0
+>
+> ejemplo:
+>
+> `a = ["hola", "5", "qwerty"]` `print a[1]`
+>
+> al ejecutar este codigo deberia salir `5`

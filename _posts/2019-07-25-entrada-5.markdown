@@ -23,7 +23,7 @@ Ahora, tendría que guardar este archivo en .py, lo guardaré como miprimermodul
 
 Ahora para usarlo solo tengo que poner primero import nombreDelModulo, y para usar el código dentro tengo que usar:
 
-nombreDelModulo.nombreDeLaFuncion(variable)
+`nombreDelModulo.nombreDeLaFuncion(variable)`
 
 ```python
 import miprimermodulo
@@ -48,3 +48,15 @@ mpm.persona1["edad"]
 ```
 
 Un módulo que personalmente he usado bastante, ha sido el modulo llamado random de python. Este modulo tiene un montón de funciones como generar un numero al azar o elegir una variable al azar de una lista, etc.
+
+```python
+import random
+
+a = [1, "hola", 2.0]
+random.randint(1, 10)
+random.choice(a)
+```
+```python
+> 5
+> 2.0
+```

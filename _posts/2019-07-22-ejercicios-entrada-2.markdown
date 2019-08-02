@@ -39,6 +39,8 @@ Pregunta: ¿Que se imprime tras ejecutar este codigo?
 * A) error
 * B) 18 es menor a 20
 * C) (nada)
+* D) 18 es mayor a 20
+* E) 18 es menor a 5
 
 # Ejercicio 3
 
@@ -59,6 +61,7 @@ Pregunta: ¿Que se imprime tras ejecutar este codigo?
 * A) error
 * B) 7 no es divisible por 2, 3 ni 5
 * C) (nada)
+* D) 7 es divisible entre 3
 
 # Ejercicio 4
 
@@ -76,11 +79,14 @@ Pregunta: ¿Que se imprime tras ejecutar este codigo?
 * A) 12345678910
 * B) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 * C) 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
 # Ejercicio 5
 
 ```python
+a = 0
 for i in range(10):
   a += i
+print a
 ```
 
 
@@ -122,7 +128,9 @@ C) 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 B) 45
 #### Ejercicio 6
 
-Tiene dos posibles respuestas:
+este ejercicio se puede resolver con dos tipos de bucles,
+
+con el while loop
 
 ```python
 a = 100
@@ -133,7 +141,7 @@ while a > 0:
   print b
 ```
 
-o
+con el for loop
 
 ```python   
 a = 0

@@ -12,11 +12,10 @@ Aqui un ejemplo de una funcion.
 def numeroMasAlto(x,y):
   if x > y:
     return x
-	else:
-		return y
+  else:
+    return y
 ```
 Este ejemplo es una funcion que le das dos numeros y te devuelve el mas alta.
-
 
 La forma de definir una funcion es:
 
