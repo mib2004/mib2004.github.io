@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Entrada 3: Funciones"
+date: "2019-07-23 19:58:47 -0500"
+---
+
+Las funciones son bastante utiles a la hora de programar porque te ayuda a no repetir el mismo codigo una y otra vez, es decir, al crear una funcion tu mismo creas un bloque de codigo, el cual lo encapsulas en un nombre especifico, para despues ser reutilizado
+
+Aqui un ejemplo de una funcion.
+
+```python
+def numeroMasAlto(x,y):
+  if x > y:
+    return x
+	else:
+		return y
+```
+Este ejemplo es una funcion que le das dos numeros y te devuelve el mas alta.
+
+
+La forma de definir una funcion es:
+
+* def nombreDeLaFuncion(varibles dentro de la funcion)
+
+
+Para llamar una funcion se pone el nombre de la funcion con entreparentesis las variables que va a usar la funcion
+```python
+numeroMasAlto(5, 6)
+```
+```python
+> 6
+```

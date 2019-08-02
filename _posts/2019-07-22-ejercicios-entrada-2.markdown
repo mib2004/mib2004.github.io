@@ -53,7 +53,7 @@ elif num % 5 == 0:
 else:
   print str(num) + " no es divisible por 2, 3 ni 5"
 ```
-
+> cabe resaltar que = se usa para definir una variable y == para comparar si dos variables son iguales
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
 * A) error

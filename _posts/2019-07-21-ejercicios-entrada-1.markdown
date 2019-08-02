@@ -56,6 +56,7 @@ Pregunta: ¿Cual sería el valor de "a" tras ejecutar el codigo anterior?
 * B) 729
 * C) 27
 * D) 9
+
 # Ejercicio 5
 ```python
 a = " hola"
@@ -64,9 +65,10 @@ c = a + b
 ```
 ¿Cual sería el valor de "c" tras ejecutar el codigo anterior?
 * A) hola como estas
-* B)  hola hola como estas
+* B) &nbsp;9 hola hola como estas
 * C) hola hola como estas
 * D) holahola como estas
+
 # Ejercicio 6
 ```python
 word1 = "Hello"

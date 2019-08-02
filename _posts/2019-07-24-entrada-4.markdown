@@ -1,0 +1,57 @@
+---
+layout: post
+title: "Entrada 4: Variables avanzadas/objetos"
+date: "2019-07-23 19:58:47 -0500"
+---
+
+A partir de ahora es cuando se empieza a complicar un poco, pero una vez que le agarras el truco se vuelve fácil.
+
+Hay 3 tipos de variables avanzadas
+
+
+
+* tuple
+* list
+* diccionary
+
+Antes de ir a la definición de cada variable, hay un concepto muy importante relacionado con estas variables avanzadas, y este es la "mutabilidad". Los diccionary y lists son mutables, mientras que el tuple no. Esto significa que todo lo que esta dentro de un diccionary o list puede ser cambiado, mientras que un tuple no.
+
+
+Las tres variables avanzadas consisten de un grupo de variables básicas manejadas de diferente forma.
+
+
+
+* Un tuple es un grupo de variables básicas, un tuple es inmutable así que las variables dentro nunca van a cambiar después de ser definidas. La manera de definirlas es nombreDeLaVarible = (grupo de variables básicas)
+
+```python
+variableTuple = (1, "hola", 1.0)
+print variableTuple
+```
+
+```python
+> (1, "hola", 1.0)
+```
+
+> cuando solo hay una variable se pone así: variableTupple = (1,) esto solo se aplica en el tuple
+
+* Una list es lo mismo que un tupple solo que este si es mutable, es decir, las variables dentro pueden ser modificadas en cualquier momento. A diferencia de un tupple una list se define con []. La manera en definir una list es nombreDeLaVarible = [grupo de variables básicas]
+
+```python
+variableList = [1, "hola", 1.0]
+print variableList
+```
+
+```python
+> [1,"hola", 1.0]
+```
+
+* Finalmente el diccionary, este si tiene un sistema diferente que el de las otras dos variables, pues este se compone de un grupo de variables básicas, y cada una tiene su "key" que es una forma que vendría a ser su palabra clave, un diccionary es mutable, lo cual significa que las variables dentro pueden ser modificadas en cualquier momento. La manera en definir una list es nombreDeLaVarible = {palabraClave: variableBasica, palabraClave: variableBasica, palabraClave: variableBasica, etc}
+
+
+```python
+variableDiccionary = {"nombre": "Marcelo", "apellido": "Icochea", "edad": 14}
+```
+
+```python
+> {"nombre": "Marcelo", "apellido": "Icochea", "edad": 14}
+```

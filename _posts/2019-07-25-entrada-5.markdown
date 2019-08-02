@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Entrada 5: Modulos"
+date: "2019-07-25 19:58:47 -0500"
+---
+El concepto de los módulos es simple, es un bloque de código guardado como una librería, uno puede crear sus propios módulos, puede usar los módulos de python que vienen en el editor, o puede importar módulos de python externos o de otro archivo.
+
+Para crear un modulo solo tienes que guardar un archivo como .py
+
+por ejemplo:
+
+```python
+def saludar(nombre):
+  print "Hola, " + nombre
+
+def despedir(nombre):
+	print "Adiós, " + nombre
+
+persona1 = {"nombre": "Marcelo", "edad": 14}
+```
+
+Ahora, tendría que guardar este archivo en .py, lo guardaré como miprimermodulo.py
+
+Ahora para usarlo solo tengo que poner primero import nombreDelModulo, y para usar el código dentro tengo que usar:
+
+nombreDelModulo.nombreDeLaFuncion(variable)
+
+```python
+import miprimermodulo
+
+miprimermodulo.saludar("Marcelo")
+miprimermodulo.persona1["nombre"]
+```
+```python
+> Hola, Marcelo
+> Marcelo
+```
+
+A la hora de llamar a un modulo lo puedes renombrar para un uso más fácil
+
+```python
+import miprimermodulo as mpm
+
+mpm.persona1["edad"]
+```
+```python
+> 14
+```
+
+Un módulo que personalmente he usado bastante, ha sido el modulo llamado random de python. Este modulo tiene un montón de funciones como generar un numero al azar o elegir una variable al azar de una lista, etc.
