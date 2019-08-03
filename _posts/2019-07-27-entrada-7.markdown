@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Entrada 7: Programacion orientada en objetos: Herencia"
+date: "2019-07-27 19:58:47 -0500"
+---
+
+Ahora pasaremos a la segunda parte de programacion orientada en objetos. En la anterior entrada les mostro como crear un objeto definiendolo por una clase, ahora vamos a crear una clase en base a otra herendando algunos de sus atributos, es decir vamos a crear una clase que herede algunos aspectos de una clase mas general,
+
+por ejemplo
+
+```python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    def saludo(self):
+        print("Hola mi nombre es " + self.nombre)
+
+class Estudiante(Persona):
+    pass
+```
+
+Como puedes observar para crear una clase que hereda de otra, tienes que poner: `class nombreDeLaClase(ClaseDeDondeVasAHeredar)`. Esto es para declarar que la clase `Estudiante` esta heredando las funciones de la clase `Persona`. Al poner `pass` la clase `Estudiante` es exactamente igual a la clase `Persona`.
+
+aqui otro ejemplo:
+```python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    def saludo(self):
+        print("Hola mi nombre es " + self.nombre)
+
+class Estudiante(Persona): 
+    def saludarProfesor(self):
+        print "Buenos dias, profesor"
+```
+
+En este segundo ejemplo hemos agregado una nueva funcion a `Estudiante` significando que ahora la clase `Estudiante` puede usar la funcion `saludo` y `saludarProfesor` mientras que `Persona` solo puede usar `saludar`. Pero, y si quieres agregarle una variable nueva a tu clase?
+
+```python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    def saludo(self):
+        print("Hola mi nombre es " + self.nombre)
+
+class Estudiante(Persona):
+    def __init__(self, nombre, inteligencia):
+	persona.__init__(self, nombre)
+	self.inteligencia = inteligencia
+```
+
+En este ejemplo lo que hice fue agregarle una variable, y al hacerlo tuve que mencionar` __init__` lo cual sobreescribio lo que habia heredado de `Persona`, entonce al poner `Persona.__init__(self, nombre)` herede nuevamente` __init__.` Esto pasa con todas las funciones, si en la clase donde has heredado mencionas una funcion de la clase "padre" automaticamente vas a sobreescribir esa funcion y ya no se va a heredar.

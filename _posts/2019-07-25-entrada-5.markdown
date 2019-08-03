@@ -60,3 +60,17 @@ random.choice(a)
 > 5
 > 2.0
 ```
+Otro modulo interesante es el modulo de processing que es principalmenta la forma de programacion visual en python. A diferencia de random este no se importa, ya que tiene su mismo programa para usar el modulo, dentro de este programa ya no tendrias que poner import processing, debido a que esto esta implicito. Processing tiene dos funciones muy importantes:
+
+* setup: es el codigo que corre primero para definir como va a ser el entorno, tamaños, colores, establecer.
+* draw: todo codigo debajo de el se va a correr 60 veces por segundo.
+
+```python
+def setup():
+  size(300, 400)
+def draw():
+  elipse(150, 200, 30, 40)
+```
+En este ejemplo no use import processing y processing.funcion porque este vendria a escribirse dentro de el programa processing donde las importaciones son explicitas.
+
+Lo que se estaria corriendo en este ejemplo es: Primero en setup con la ayuda de la funcion size se definiria un area o canvas, como se suele llamar, en donde va a ocurrir todo, este area en este ejemplo es de 300 pixeles de ancho y 400 de alto. Luego con la funcion elipse, se dibujaria una elipse en el pixel 150 de ancho y 200 de alto, y tendria como medidas 30 pixeles de ancho y 40 de alto.
