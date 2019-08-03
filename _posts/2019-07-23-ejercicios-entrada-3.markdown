@@ -13,9 +13,9 @@ a(4)
 ```
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* 5
-* 9
-* error
+* A) 5
+* B) 9
+* C) error
 # Ejercicio 2
 
 ```python
@@ -25,9 +25,9 @@ b(4, 9)
 ```
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* 9
-* 13
-* error
+* A) 9
+* B) 13
+* C) error
 
 # Ejercicio 3
 
@@ -36,10 +36,10 @@ def c(x, y):
   return x > y
 ```
 
-Pregunta: ¿Que se tipo de variable se imprime tras ejecutar este codigo?
-* int
-* boolean
-* string
+Pregunta: ¿Que se tipo de variable se devuelve tras ejecutar este codigo?
+* A) int
+* B) boolean
+* C) string
 
 # Ejercicio 4
 
@@ -50,9 +50,9 @@ print d(d(d(4)))
 ```
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* 32
-* 16
-* error
+* A) 32
+* B) 16
+* C) error
 
 # Ejercicio 5
 
@@ -62,18 +62,50 @@ def c(x):
 print c(8)
 ```
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* 8
-* 15
-* error
+* A) 8
+* B) 15
+* C) error
 
 # Ejercicio 6
 
-```python
-
-```
+piensa en una funcion que le introduzcas un nombre y luego salude a ese nombre
 
 # Ejercicio 7
 
-```python
+piensa en una funcion que le das un numero y lo eleva al cuadrado y le suma 1
 
+# Respuestas
+
+#### Ejercicio 1
+
+A) 5
+
+#### Ejercicio 2
+
+B) 13
+
+#### Ejercicio 3
+
+B) boolean
+
+#### Ejercicio 4
+
+A) 32
+
+#### Ejercicio 5
+
+C) error
+
+#### Ejercicio 6
+
+```python
+def saludar(nombre):
+  return "hola " + nombre
+  ```
+
+#### Ejercicio 7
+
+```python
+def cuadradoMasUno(num):
+  return (num ** 2) + 1
 ```

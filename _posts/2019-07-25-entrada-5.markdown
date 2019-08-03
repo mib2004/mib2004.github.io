@@ -28,8 +28,8 @@ Ahora para usarlo solo tengo que poner primero import nombreDelModulo, y para us
 ```python
 import miprimermodulo
 
-miprimermodulo.saludar("Marcelo")
-miprimermodulo.persona1["nombre"]
+print miprimermodulo.saludar("Marcelo")
+print miprimermodulo.persona1["nombre"]
 ```
 ```python
 > Hola, Marcelo

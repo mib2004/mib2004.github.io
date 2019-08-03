@@ -12,22 +12,23 @@ print str(a) + " es un tuple"
 ```
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* 1, 2, 3, 4, "hola" es un tuple
-* (1, 2, 3, 4, "hola" es un tuple)
-* (1, 2, 3, 4, "hola") es un tuple
+* A) 1, 2, 3, 4, "hola" es un tuple
+* B) (1, 2, 3, 4, "hola" es un tuple)
+* C) (1, 2, 3, 4, "hola") es un tuple
 
 # Ejercicio 2
 
 ```python
-b = (1, 2, 3, 4, "hola")
-print a + " es un tuple"
+a = {nombre: Marcelo, edad: 14}
+a[edad] = 15
+print a[edad]
 ```
-> una vaiable avanzada solo se puede sumar con su mismo tipo
+
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* error
-* (1, 2, 3, 4, "hola" es un tuple)
-* (1, 2, 3, 4, "hola") es un tuple
+* A) 14
+* B) 15
+* C) error
 
 # Ejercicio 3
 
@@ -36,24 +37,25 @@ a = [3, "hola", 4]
 b = [0, 6, "bueno"]
 print a + b
 ```
+> una vaiable avanzada solo se puede sumar con su mismo tipo
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* [3, "hola", 4] [0, 6, "bueno"]
-* [3, "hola", 4, 0, 6, "bueno"]
-* error
+* A) [3, "hola", 4] [0, 6, "bueno"]
+* B) [3, "hola", 4, 0, 6, "bueno"]
+* C) error
 
 # Ejercicio 4
 
 ```python
-a = [3, "hola", 4]
-b = (0, 6, "bueno")
+a = [3, "hola ", 4]
+b = (0, 6, "bueno ")
 print a[1] + b[2]
 ```
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* [3, "hola", 4] (0, 6, "bueno")
-* [3, "hola", 4, 0, 6, "bueno"]
-* error
+* A) hola bueno
+* B) 9
+* C) error
 
 # Ejercicio 5
 
@@ -63,21 +65,56 @@ a.append("hola")
 print a
 ```
 
-> Los metodos son como codigos se aplican a las variables de cualquier tipo, existen un monton de metodos y todos tienen la misma forma en escribirlas, variable.metodo. unos ejemplos de metodos son, append(): agrega el elemento en los parentesis a una variable mutable, clear(): quita todos los elementos de la lista
-
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* [1, 2, "hola"]
-* [1, 2]"hola"
-* error
+* A) [1, 2, "hola"]
+* B) [1, 2]"hola"
+* C) error
 
 # Ejercicio 6
 
-```python
-
-```
+Usando el metodo .append y un bucle, piensa en un codigo que cree una lista con los 100 primeros numeros y luego los imprime
 
 # Ejercicio 7
 
-```python
+Usando raw_input() piensa en un codigo que cree un diccionario con el nombre y edad de un usuario
 
+# Respuestas
+
+#### Ejercicio 1
+
+C) (1, 2, 3, 4, "hola") es un tuple
+
+#### Ejercicio 2
+
+B) 15
+
+#### Ejercicio 3
+
+B) [3, "hola", 4, 0, 6, "bueno"]
+
+#### Ejercicio 4
+
+A) hola bueno
+
+#### Ejercicio 5
+
+A) [1, 2, "hola"]
+
+#### Ejercicio 6
+
+```python
+a =  []
+for i in range(1, 101):
+  a.append(i)
+print a
+```
+
+#### Ejercicio 7
+
+```python
+persona1= {}
+nombre = raw_input("¿Cual es tu nombre?")
+persona1["nombre"] = nombre
+edad = raw_input("¿Cual es tu edad?")
+persona1["edad"] = edad
 ```

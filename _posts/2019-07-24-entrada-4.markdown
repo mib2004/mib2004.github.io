@@ -16,7 +16,7 @@ Hay 3 tipos de variables avanzadas
 
 Antes de ir a la definición de cada variable, hay un concepto muy importante relacionado con estas variables avanzadas, y este es la "mutabilidad". Los diccionary y lists son mutables, mientras que el tuple no. Esto significa que todo lo que esta dentro de un diccionary o list puede ser cambiado, mientras que un tuple no.
 
-Otra cosa importante de mencionar son los metodos. Los metodos son como codigos se aplican a las variables de cualquier tipo, existen un monton de metodos y todos tienen la misma forma en escribirlas, `variable.metodo`. unos ejemplos de metodos son, `.append()`: agrega el elemento en los parentesis a una variable mutable, `clear()`: quita todos los elementos de la lista
+Otra cosa importante de mencionar son los metodos. Los metodos son como codigos se aplican a las variables de cualquier tipo, existen un monton de metodos y todos tienen la misma forma en escribirlas, `variable.metodo`. unos ejemplos de metodos son, `.append()`: agrega el elemento en los parentesis a una variable list, `clear()`: quita todos los elementos de la una variable mutable
 
 
 Las tres variables avanzadas consisten de un grupo de variables manejadas de diferente forma.
@@ -51,7 +51,7 @@ print variableList
 > [1,"hola", 1.0]
 ```
 
-* Finalmente el diccionary, este si tiene un sistema diferente que el de las otras dos variables, pues este se compone de un grupo de variables , y cada una tiene su "key" que es una forma que vendría a ser su palabra clave, un diccionary es mutable, lo cual significa que las variables dentro pueden ser modificadas en cualquier momento. La manera en definir una list es `nombreDeLaVarible = {palabraClave: variableBasica, palabraClave: variableBasica, palabraClave: variableBasica, etc}`
+* Finalmente el diccionary, este si tiene un sistema diferente que el de las otras dos variables, pues este se compone de un grupo de variables , y cada una tiene su "key" que es una forma que vendría a ser su palabra clave, un diccionary es mutable, lo cual significa que las variables dentro pueden ser modificadas en cualquier momento. La manera en definir una list es `nombreDeLaVarible = {palabraClave: variableBasica, palabraClave: variableBasica, palabraClave: variableBasica, etc}`.
 
 
 ```python
@@ -61,10 +61,14 @@ variableDiccionary = {"nombre": "Marcelo", "apellido": "Icochea", "edad": 14}
 ```python
 > {"nombre": "Marcelo", "apellido": "Icochea", "edad": 14}
 ```
-> Para sacar un elemento de una variable avanzada, se pone el numero de elemento que quieres sacar desde izquierda a derecha empezando desde 0
+Para cambiar un elemento en un diccionary, tienes que poner `nombreDeElDiccionary[key] = variableNueva`, si el nombre de la key introducida no existe este codigo crearia una nueva variable con esa key
+
+> Para imprimir un elemento de un tuple o lista, se pone el numero de elemento que quieres sacar desde izquierda a derecha empezando desde 0
 >
 > ejemplo:
 >
 > `a = ["hola", "5", "qwerty"]` `print a[1]`
 >
 > al ejecutar este codigo deberia salir `5`
+>
+> Por otro lado, para sacar un elemento de un diccionary solo pones `print nombreDelDiccionary[keyDelElementoQueQuieres]`
