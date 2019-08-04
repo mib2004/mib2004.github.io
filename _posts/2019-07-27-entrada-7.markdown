@@ -13,7 +13,7 @@ class Persona:
     def __init__(self, nombre):
         self.nombre = nombre
     def saludo(self):
-        print("Hola mi nombre es " + self.nombre)
+        print "Hola mi nombre es " + self.nombre
 
 class Estudiante(Persona):
     pass
@@ -27,21 +27,23 @@ class Persona:
     def __init__(self, nombre):
         self.nombre = nombre
     def saludo(self):
-        print("Hola mi nombre es " + self.nombre)
+        print "Hola mi nombre es " + self.nombre
 
-class Estudiante(Persona): 
+class Estudiante(Persona):
     def saludarProfesor(self):
         print "Buenos dias, profesor"
 ```
 
 En este segundo ejemplo hemos agregado una nueva funcion a `Estudiante` significando que ahora la clase `Estudiante` puede usar la funcion `saludo` y `saludarProfesor` mientras que `Persona` solo puede usar `saludar`. Pero, y si quieres agregarle una variable nueva a tu clase?
-
+```python
+a = da
+```
 ```python
 class Persona:
     def __init__(self, nombre):
         self.nombre = nombre
     def saludo(self):
-        print("Hola mi nombre es " + self.nombre)
+        print "Hola mi nombre es " + self.nombre
 
 class Estudiante(Persona):
     def __init__(self, nombre, inteligencia):

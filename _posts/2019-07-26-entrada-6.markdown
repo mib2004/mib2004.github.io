@@ -1,0 +1,62 @@
+---
+layout: post
+title: "entrada 6: programacion orientada en objetos: clases y encapsulacion"
+date: "2019-07-26 19:58:47 -0500"
+---
+
+Llegamos al tema grande y el más interesante en mí opinión, los objetos y clases. Una clase vendría siendo como un objeto, tú puedes llamar tu clase de alguna forma y le puedes dar habilidades mediante funciones.
+
+Para definir una clase primero tienes que poner `class nombreDeLaClase` y luego tienes que definir` __init__`. `__init__` vendría a ser como la base de el objeto, es decir, donde vas a definir las variables que vas a usar para las funciones, para usar `__init__` pondrías: `def __init__(self, variableQueVasUsar, variableQueVasUsar, variableQueVasUsar, etc)`. Dentro de `__init__` tendrías que poner para que las variables que has puesto sean para toda la clase usando `self`
+
+```python
+class Persona:
+	def __init__(self, nombre):
+		self.nombre = nombre
+```
+Aquí uso el `self`. Por temas de scoping, que como he mencionado en la entrada extra 2, las variables dentro de una función solo van a estar para esa función y no se puede usar fuera de ella. Pero lo que hace `self` es, que en ves que la variable sea de `__init__` la variable se vuelve propia de la clase `Persona` entonces esa variable se puede usar para todas las funciones dentro de `Persona`, más no fuera de ella.
+
+Luego de definir las variables de la clase, `Persona` ya se podría considerar una clase para objetos y ya podemos crear funciones en base a él. Ahora, para añadirle funciones a tu objeto solo tienes que ponerlos debajo.
+
+```python
+class Persona:
+	def __init__(self, nombre):
+		self.nombre = nombre
+	def saludar(self):
+		print "Hola mi nombre es " + self.nombre
+```
+
+Ahora lo que he hecho es agregarle una función para que cunado la llame digo su nombre, para definir la función tienes que poner `def función(self)` para que pueda usar las variables definidas en `__init__` y a la hora de escribir las variables tienes que usar `self`.
+
+Dentro de `__init__` no solo puedes definir las variables que te dan, también puedes crear tus propias variables siempre y cuando uses self.
+
+```python
+import random
+def __init__(self, nombre):
+		self.nombre = nombre
+		self.inteligencia = random.randint(1, 100)
+	def saludar(self):
+		print "Hola mi nombre es " + self.nombre + " y tengo " + self.inteligencia + " de inteligencia
+```
+
+A la hora de llamar el objeto en un código, es decir, asignarlo a un nombre, tienes que poner: `nombreDelObjeto = ClaseDelObjeto(VariablesDeLaClase)`
+
+```python
+persona1 = Persona(Juan)
+persona2 = Persona(Marcelo)
+persona3 = Persona(Antonio)
+```
+
+Aquí he definido a 3 personas entonces si ahorita usara la función de saludar cada uno diría su nombre y tendrían diferentes números de inteligencia.
+
+```python
+persona1.saludar()
+persona2.saludar()
+persona3.saludar()
+```
+```python
+> Hola mi nombre es Juan y tengo 42 de inteligencia
+> Hola mi nombre es Marcelo y tengo 93 de inteligencia
+> Hola mi nombre es Antonio y tengo 68 de inteligencia
+```
+
+Dado que saludar es una función siempre tiene que tener entreparentesis al final, no importante si no usa una variable, si la usara estaría ahí.
