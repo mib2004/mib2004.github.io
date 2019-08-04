@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Entrada 4: Variables avanzadas/objetos"
-date: "2019-07-24 19:58:47 -0500"
+date: "2019-07-24 19:38:47 -0500"
 ---
 
 A partir de ahora es cuando se empieza a complicar un poco, pero una vez que le agarras el truco se vuelve fácil.

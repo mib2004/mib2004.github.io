@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Entrada 5: Modulos"
-date: "2019-07-25 19:58:47 -0500"
+date: "2019-07-25 19:38:47 -0500"
 ---
 El concepto de los módulos es simple, es un bloque de código guardado como una librería, uno puede crear sus propios módulos, puede usar los módulos de python que vienen en el editor, o puede importar módulos de python externos o de otro archivo.
 

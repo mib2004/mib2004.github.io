@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "entrada 6: programacion orientada en objetos: clases y encapsulacion"
-date: "2019-07-26 19:58:47 -0500"
+date: "2019-07-26 19:38:47 -0500"
 ---
 
 Llegamos al tema grande y el más interesante en mí opinión, los objetos y clases. Una clase vendría siendo como un objeto, tú puedes llamar tu clase de alguna forma y le puedes dar habilidades mediante funciones.
