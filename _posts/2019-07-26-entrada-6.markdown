@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "entrada 6: programacion orientada en objetos: clases y encapsulacion"
+title: "Entrada 6: programacion orientada en objetos: clases y encapsulacion"
 date: "2019-07-26 19:38:47 -0500"
 ---
 

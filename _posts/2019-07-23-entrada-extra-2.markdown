@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "entrada extra 2: scoping"
+title: "Entrada extra 2: scoping"
 date: "2019-07-23 19:58:47 -0500"
 ---
 
