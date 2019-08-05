@@ -10,8 +10,8 @@ Para definir una clase primero tienes que poner `class nombreDeLaClase` y luego 
 
 ```python
 class Persona:
-	def __init__(self, nombre):
-		self.nombre = nombre
+  def __init__(self, nombre):
+    self.nombre = nombre
 ```
 Aquí uso el `self`. Por temas de scoping, que como he mencionado en la entrada extra 2, las variables dentro de una función solo van a estar para esa función y no se puede usar fuera de ella. Pero lo que hace `self` es, que en ves que la variable sea de `__init__` la variable se vuelve propia de la clase `Persona` entonces esa variable se puede usar para todas las funciones dentro de `Persona`, más no fuera de ella.
 
@@ -19,10 +19,10 @@ Luego de definir las variables de la clase, `Persona` ya se podría considerar u
 
 ```python
 class Persona:
-	def __init__(self, nombre):
-		self.nombre = nombre
-	def saludar(self):
-		print "Hola mi nombre es " + self.nombre
+  def __init__(self, nombre):
+    self.nombre = nombre
+  def saludar(self):
+    print "Hola mi nombre es " + self.nombre
 ```
 
 Ahora lo que he hecho es agregarle una función para que cunado la llame digo su nombre, para definir la función tienes que poner `def función(self)` para que pueda usar las variables definidas en `__init__` y a la hora de escribir las variables tienes que usar `self`.
@@ -31,11 +31,12 @@ Dentro de `__init__` no solo puedes definir las variables que te dan, también p
 
 ```python
 import random
-def __init__(self, nombre):
-		self.nombre = nombre
-		self.inteligencia = random.randint(1, 100)
-	def saludar(self):
-		print "Hola mi nombre es " + self.nombre + " y tengo " + self.inteligencia + " de inteligencia
+class Persona:
+  def __init__(self, nombre):
+    self.nombre = nombre
+    self.inteligencia = random.randint(1, 100)
+  def saludar(self):
+    print "Hola mi nombre es " + self.nombre + " y tengo " + self.inteligencia + " de inteligencia
 ```
 
 A la hora de llamar el objeto en un código, es decir, asignarlo a un nombre, tienes que poner: `nombreDelObjeto = ClaseDelObjeto(VariablesDeLaClase)`
