@@ -48,9 +48,9 @@ p1.presentarse()
 ```
 
 Pregunta: ¿Que se imprime tras ejecutar este codigo?
-* A)
+* A) error
 * B) hola, mi nombre es Juan y enseño el curso de Mate
-* C)
+* C) hola me llamo Juan y enseño diseño
 
 # Ejercicio 4
 

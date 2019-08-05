@@ -59,4 +59,4 @@ persona3.saludar()
 > Hola mi nombre es Antonio y tengo 68 de inteligencia
 ```
 
-Dado que saludar es una función siempre tiene que tener entreparentesis al final, no importante si no usa una variable, si la usara estaría ahí.
+> Dado que saludar es una función siempre tiene que tener entreparentesis al final, no importante si no usa una variable, si la usara estaría ahí.

@@ -61,9 +61,13 @@ Pregunta: ¿Que se imprime tras ejecutar este codigo?
 * C) un elemento al azar de a
 
 # Ejercicio 5
+
 Piensa en un codigo que imprima un numero al azar del 5 al 20
+
 # Ejercicio 6
+
 Piensa en un codigo que imprima una vocal al azar
+
 # Respuestas
 
 #### Ejercicio 1
