@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ejercicios entrada 7"
-date: "2019-07-26 19:58:47 -0500"
+date: "2019-07-27 19:58:47 -0500"
 ---
 # Ejercicio 1
 
