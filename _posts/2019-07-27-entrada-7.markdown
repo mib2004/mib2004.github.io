@@ -44,8 +44,8 @@ class Persona:
 
 class Estudiante(Persona):
     def __init__(self, nombre, inteligencia):
-	     persona.__init__(self, nombre)
-	     self.inteligencia = inteligencia
+      persona.__init__(self, nombre)
+	    self.inteligencia = inteligencia
 ```
 
 En este ejemplo lo que hice fue agregarle una variable, y al hacerlo tuve que mencionar` __init__` lo cual sobreescribio lo que habia heredado de `Persona`, entonce al poner `Persona.__init__(self, nombre)` herede nuevamente` __init__.` Esto pasa con todas las funciones, si en la clase donde has heredado mencionas una funcion de la clase "padre" automaticamente vas a sobreescribir esa funcion y ya no se va a heredar.
