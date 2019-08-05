@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Entrada 7: Programacion orientada en objetos: Herencia"
-date: "2019-07-27 19:38:47 -0500"
+date: "2019-07-27 19:18:47 -0500"
 ---
 
 Ahora pasaremos a la segunda parte de programacion orientada en objetos. En la anterior entrada les mostro como crear un objeto definiendolo por una clase, ahora vamos a crear una clase en base a otra herendando algunos de sus atributos, es decir vamos a crear una clase que herede algunos aspectos de una clase mas general
