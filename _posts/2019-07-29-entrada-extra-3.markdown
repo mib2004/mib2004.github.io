@@ -3,7 +3,7 @@ layout: post
 title: "Entrada extra 3: algoritmo evolutivo"
 date: "2019-07-26 19:38:47 -0500"
 ---
-Este es un algoritmo un poco avanzado que se usa en los objetos para que puedan mejorar mientras más tiempo corra el programa. Este algoritmo consta de 3 pasos. Antes de comenzar con los pasos a seguir seria bueno primero explicar en que forma funciona este algoritmo. Este algoritmo consta de tener varios objetos que tengan un mismo objetivo, lanzarlos para ver quien esta más cerca, los más cercanos vendrían a ser como los "padres" que se juntan entre ellos para que tengan como un "hijo", el cual va a seguir lo que hicieron sus padres. Este proceso se repetiría muchísimas veces hasta que se perfeccione o se llegue bastante cerca a la perfección de llegar al objetivo.
+Este es un algoritmo un poco avanzado que se usa en los objetos para que puedan mejorar mientras más tiempo corra el programa. Este algoritmo consta de 3 pasos. Antes de comenzar con los pasos a seguir seria bueno primero explicar en que forma funciona este algoritmo. Este algoritmo consta de tener varios objetos que tengan un mismo objetivo, lanzarlos para ver quien esta más cerca, los más cercanos vendrían a ser como los "padres" que se juntan entre ellos para que tengan como un "hijo", el cual va a seguir lo que hicieron sus padres. Este proceso se repetiría muchísimas veces, creando asi muchas generaciones cada una mejor que la otra, hasta que se perfeccione o se llegue bastante cerca a la perfección de llegar al objetivo.
 
 
 Ahora si comenzamos con los pasos. El primer paso vendría siendo el crear una población que tengan un objetivo en común. En un comienzo la población debería tratar de llegar al objetivo de forma al azar, siendo unos más efectivos que otros dependiendo de que tanta suerte tengan.
@@ -14,7 +14,7 @@ El segundo paso pasaría a ser la selección. Este se refiere a seleccionar a aq
 
 
 
-El tercer paso es la variación, una vez los "padres" son escogidos, ellos se funcionan, es decir una parte de ellos se junta con otra parte del otro. Esto se puede hacer de forma al azar o solo la mitad con la otra mitad. Estas dos partes se unirían para formar un objeto "hijo" el cual tiene parte de cada uno de sus "padres" significando que él ha heredado lo que sus "padres" han hecho. Luego, posible variación en esto, el programador puede poner que haya una pequeña posibilidad de que algún aspecto de el "hijo" mute y sea al azar. Esto se usa para darle variación a la población y crea posibles caminos que no se consiguieron en un inicio en la población inicial.
+El tercer paso es la variación, una vez los "padres" son escogidos, ellos se fucionan, es decir una parte de ellos se junta con otra parte del otro. Esto se puede hacer de forma al azar o solo la mitad con la otra mitad. Estas dos partes se unirían para formar un objeto "hijo" el cual tiene parte de cada uno de sus "padres" significando que él ha heredado lo que sus "padres" han hecho. Luego, posible variación en esto, el programador puede poner que haya una pequeña posibilidad de que algún aspecto de el "hijo" mute y sea al azar. Esto se usa para darle variación a la población y crea posibles caminos que no se consiguieron en un inicio en la población inicial.
 
 
 
@@ -22,4 +22,4 @@ Ahora un ejemplo para poder entender de mejor manera. Digamos que un mono está 
 
 
 
-En este caso vamos a tomar como población 1000 palabras al azar que escribió el mono en un comienzo. Estas palabras por cada letra que tengan bien tendrán +1 en posibilidad. Por cada punto de posibilidad se va a agregar el objeto 1 vez a una lista. Al terminar de colocar los objetos en la lista, digamos que hubieron 50 que tuvieron solo una letra bien, hubieron 10 que tuvieron 2 y 2 que tuvieron 3. Ahora a partir de esa lista se funcionarían y se crearían 1000 palabras más y este proceso se remitiría hasta llegar a "programar"
+En este caso vamos a tomar como población 1000 palabras al azar que escribió el mono en un comienzo. Estas palabras por cada letra que tengan bien tendrán +1 en posibilidad. Por cada punto de posibilidad se va a agregar el objeto 1 vez a una lista. Al terminar de colocar los objetos en la lista, digamos que hubieron 50 que tuvieron solo una letra bien, hubieron 10 que tuvieron 2 y 2 que tuvieron 3. Ahora a partir de esa lista se funcionarían y se crearían 1000 palabras más y este proceso se repitiría hasta llegar a "programar"
